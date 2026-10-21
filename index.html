@@ -1,175 +1,698 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>El Ñaño Miami | Ecuadorian restaurant, Coral Gables</title>
-<meta name="description" content="Coastal Ecuadorian cooking since 2001, now open at 339 Miracle Mile, Coral Gables. Encebollado, camarones reventados, mariscos, ceviche and more.">
-<meta name="theme-color" content="#003c28">
-<meta property="og:title" content="El Ñaño Miami">
-<meta property="og:description" content="Coastal Ecuadorian cooking since 2001. Now open in Miami.">
-<meta property="og:type" content="restaurant">
-<link rel="icon" href="assets/logo/el-nano-miami-green.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/css/style.css">
-<script>document.documentElement.classList.add('js')</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Restaurant","name":"El Ñaño Miami","servesCuisine":"Ecuadorian","telephone":"+1-786-558-5466","address":{"@type":"PostalAddress","streetAddress":"339 Miracle Mile","addressLocality":"Coral Gables","addressRegion":"FL","postalCode":"33134","addressCountry":"US"},"sameAs":["https://www.instagram.com/elnanogroup/"]}
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El Ñaño Miami | Authentic Ecuadorian Restaurant & Cocktails, Coral Gables</title>
+  <meta name="description" content="Authentic coastal Ecuadorian cuisine, craft cocktails, executive lunch, and vibrant celebrations at 339 Miracle Mile, Coral Gables, Miami. Famous encebollado, ceviches, and warm hospitality.">
+  <meta name="theme-color" content="#003c28">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="El Ñaño Miami | Authentic Ecuadorian Restaurant & Cocktails">
+  <meta property="og:description" content="Discover Ecuadorian coastal cooking, artisanal cocktails, and memorable gatherings on Miracle Mile in Coral Gables.">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:url" content="https://www.elnanorestaurant.com/">
+  <meta property="og:image" content="assets/img/hero/hero-feast.jpg">
+
+  <link rel="icon" href="assets/logo/el-nano-miami-green.svg" type="image/svg+xml">
+  
+  <!-- Preload Critical Hero Image for LCP Optimization -->
+  <link rel="preload" as="image" href="assets/img/hero/hero-feast.webp" type="image/webp" fetchpriority="high">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js')</script>
+
+  <!-- Schema.org Restaurant Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "El Ñaño Miami",
+    "image": "assets/img/hero/hero-feast.jpg",
+    "servesCuisine": "Ecuadorian",
+    "priceRange": "$$",
+    "telephone": "+1-786-558-5466",
+    "url": "https://www.elnanorestaurant.com/",
+    "hasMenu": "https://el-nano-miami.micartaya.es",
+    "acceptsReservations": "https://www.sevenrooms.com/explore/elnanomiami/reservations/create/search/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "339 Miracle Mile",
+      "addressLocality": "Coral Gables",
+      "addressRegion": "FL",
+      "postalCode": "33134",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 25.7505,
+      "longitude": -80.2585
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "11:30",
+        "closes": "22:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday", "Saturday"],
+        "opens": "11:30",
+        "closes": "23:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Sunday"],
+        "opens": "11:30",
+        "closes": "21:30"
+      }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/elnanogroup/",
+      "https://www.ubereats.com/store/el-nano-coral-gables/kp463oD1Vi6E7nZN94qZXA"
+    ]
+  }
+  </script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+  <!-- Accessibility Skip Navigation -->
+  <a class="skip" href="#main">Skip to main content</a>
 
-<header class="site-header" id="top">
-  <div class="bar">
-    <a class="brand" href="#top" aria-label="El Ñaño Miami, back to top">
-      <img src="assets/logo/el-nano-miami-yellow.svg" alt="El Ñaño Miami" width="609" height="308">
-    </a>
-    <nav class="nav" aria-label="Primary">
-      <a href="#menu">Menu</a>
-      <a href="#lunch">Lunch</a>
-      <a href="#visit">Visit</a>
+  <!-- SITE HEADER -->
+  <header class="site-header" id="top">
+    <div class="bar">
+      <a class="brand" href="#top" aria-label="El Ñaño Miami, back to top">
+        <img src="assets/logo/el-nano-miami-yellow.svg" alt="El Ñaño Miami" width="609" height="308">
+      </a>
+      <nav class="nav" aria-label="Primary Navigation">
+        <a href="#menu">Menu</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#recommendations">Chef's Picks</a>
+        <a href="#story">Our Story</a>
+        <a href="#visit">Visit &amp; Hours</a>
+      </nav>
+      <div class="header-actions">
+        <a class="reserve-btn" href="https://www.sevenrooms.com/explore/elnanomiami/reservations/create/search/" target="_blank" rel="noopener">Reserve</a>
+        <button class="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="drawer" id="drawer" hidden>
+    <nav aria-label="Mobile Navigation">
+      <a href="#menu">The Menu</a>
+      <a href="#experiences">Dining Experiences</a>
+      <a href="#recommendations">Chef's Recommendations</a>
+      <a href="#story">Our Story Since 2001</a>
+      <a href="#visit">Location &amp; Hours</a>
+      <a class="drawer-sublink" href="https://el-nano-miami.micartaya.es" target="_blank" rel="noopener">Browse Full Menu ↗</a>
+      <a class="drawer-sublink" href="https://www.elnanorestaurant.com/miami-lunch-specials/" target="_blank" rel="noopener">Lunch Specials ↗</a>
+      <a class="drawer-sublink" href="https://www.ubereats.com/store/el-nano-coral-gables/kp463oD1Vi6E7nZN94qZXA" target="_blank" rel="noopener">Delivery on Uber Eats ↗</a>
     </nav>
-    <a class="reserve" href="https://www.sevenrooms.com/explore/elnanomiami/reservations/create/search/" target="_blank" rel="noopener">Reserve</a>
-    <button class="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><span></span><span></span></button>
+    <div class="drawer-footer">
+      <p>339 Miracle Mile, Coral Gables, FL 33134</p>
+      <p>Direct Inquiries: <a href="tel:+17865585466">(786) 558-5466</a></p>
+      <a class="btn btn-primary drawer-cta" href="https://www.sevenrooms.com/explore/elnanomiami/reservations/create/search/" target="_blank" rel="noopener">Reserve a Table</a>
+    </div>
   </div>
-</header>
 
-<div class="drawer" id="drawer" hidden>
-  <nav aria-label="Mobile">
-    <a href="#menu">Menu</a>
-    <a href="#lunch">Lunch</a>
-    <a href="#visit">Visit</a>
-    <a href="https://el-nano-miami.micartaya.es" target="_blank" rel="noopener">Full menu</a>
-    <a href="https://www.ubereats.com/store/el-nano-coral-gables/kp463oD1Vi6E7nZN94qZXA" target="_blank" rel="noopener">Delivery</a>
-  </nav>
-  <p class="drawer-foot">339 Miracle Mile, Coral Gables<br><a href="tel:+17865585466">(786) 558-5466</a></p>
-</div>
+  <main id="main">
 
-<main id="main">
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-photo"><img src="assets/img/table.jpg" alt="A table covered with Ecuadorian dishes: fried fish, patacones, ceviche, prawns and rice" width="738" height="414"></div>
-    <div class="hero-copy">
-      <img class="hero-logo" src="assets/logo/el-nano-miami-yellow.svg" alt="El Ñaño Miami" width="609" height="308">
-      <h1>Coastal Ecuadorian cooking, now open in Miami.</h1>
-      <div class="hero-actions">
-        <a class="block" href="https://www.sevenrooms.com/explore/elnanomiami/reservations/create/search/" target="_blank" rel="noopener">Reserve a table</a>
-        <a class="ulink" href="https://el-nano-miami.micartaya.es" target="_blank" rel="noopener">Read the menu</a>
+    <!-- ──────────────────────────────────────────────────────────────────────────
+         SECTION 1 — HERO
+         ────────────────────────────────────────────────────────────────────────── -->
+    <section class="hero" aria-label="Welcome to El Ñaño Miami">
+      <div class="hero-backdrop">
+        <picture>
+          <source srcset="assets/img/hero/hero-feast.webp" type="image/webp">
+          <img src="assets/img/hero/hero-feast.jpg" alt="Generous dining table spread with authentic coastal Ecuadorian dishes, ceviche, and craft cocktails" width="1600" height="1067" fetchpriority="high">
+        </picture>
       </div>
-      <p class="hero-addr">339 Miracle Mile, Coral Gables</p>
-    </div>
-  </section>
+      <div class="hero-overlay" aria-hidden="true"></div>
 
-  <!-- SINCE 2001 -->
-  <section class="intro">
-    <div class="intro-text">
-      <h2>Since 2001, the cooking of Ecuador’s coast.</h2>
-      <p>Our encebollado has been called the best in Europe. Now it’s on Miracle Mile.</p>
-      <ul class="houses" aria-label="Our houses: seven across four cities">
-        <li><span>Miami</span><em>Now open</em></li>
-        <li><span>Barcelona</span><em></em></li>
-        <li><span>Zaragoza</span><em></em></li>
-        <li><span>Madrid</span><em>Temporarily closed</em></li>
-      </ul>
-      <p class="small">Seven houses, four cities.</p>
-    </div>
-    <figure class="intro-shot mask" data-reveal>
-      <img src="assets/img/ceviche.jpg" alt="Ceviche in a blue bowl with toasted corn, avocado, red onion and plantain chips" width="515" height="388">
-    </figure>
-  </section>
+      <div class="hero-container">
+        <div class="hero-copy">
+          <div class="hero-badge">Miracle Mile • Coral Gables, FL</div>
+          <h1>A taste of Ecuador. A reason to gather.</h1>
+          <p class="lead">Discover authentic Ecuadorian coastal cooking, artisanal cocktails, and memorable shared moments at El Ñaño Miami.</p>
+          
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu">Explore the Menu</a>
+            <a class="btn btn-secondary" href="https://www.sevenrooms.com/explore/elnanomiami/reservations/create/search/" target="_blank" rel="noopener">Reserve a Table</a>
+          </div>
 
-  <!-- PINNED DISH STORY -->
-  <section class="story" id="menu" aria-label="Signature dishes">
-    <div class="pin">
-      <div class="dishes">
-        <article class="dish" data-name="Encebollado">
-          <div class="dish-text">
-            <h2>Encebollado</h2>
-            <p>A fish-and-yuca broth finished with pickled onion. The bowl we’re known for.</p>
+          <div class="hero-info-bar">
+            <span>📍 339 Miracle Mile, Coral Gables</span>
+            <span>⏱ Open Daily for Lunch &amp; Dinner</span>
+            <a href="tel:+17865585466">📞 (786) 558-5466</a>
           </div>
-          <figure class="dish-shot crop-soup"><img src="assets/img/spread.jpg" alt="Encebollado, an orange fish broth topped with pickled red onion" width="660" height="464"></figure>
+        </div>
+
+        <!-- Contained Current Verified Offer Panel -->
+        <aside class="hero-offer" aria-label="Featured Promotion">
+          <div class="offer-card">
+            <div class="offer-header">
+              <span class="offer-badge">Featured at the Bar</span>
+              <span class="offer-time">Mon – Fri • 3:00 – 7:00 PM</span>
+            </div>
+            <h2>Afternoon Happy Hour</h2>
+            <div class="offer-pricing">
+              <div class="offer-price-item">
+                <strong>$9</strong>
+                <span>Classic Cocktails</span>
+              </div>
+              <div class="offer-price-item">
+                <strong>$7</strong>
+                <span>Savory Coastal Bites</span>
+              </div>
+            </div>
+            <p class="desc">Unwind on Miracle Mile with handcrafted Latin cocktails including our signature Canelazo Miamero and Ecuadorian Sour, paired with crispy empanadas and savory patacones.</p>
+            <a class="btn btn-primary" href="https://el-nano-miami.micartaya.es" target="_blank" rel="noopener">View Drinks &amp; Bites</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ──────────────────────────────────────────────────────────────────────────
+         SECTION 2 — OFFERS AND EXPERIENCES
+         ────────────────────────────────────────────────────────────────────────── -->
+    <section class="experiences" id="experiences" aria-label="Dining Experiences">
+      <div class="section-head" data-reveal>
+        <span class="kicker dark">Experiences &amp; Offerings</span>
+        <h2>More Than A Meal. A Reason To Gather.</h2>
+        <p>From lively weekday executive lunches to evening dinners, afternoon happy hours, and festive celebrations, experience Ecuadorian warmth right on Miracle Mile.</p>
+      </div>
+
+      <div class="exp-grid">
+        <!-- Card 1: Lunch -->
+        <article class="exp-card" data-reveal>
+          <div class="exp-media">
+            <span class="exp-tag">Weekday Special</span>
+            <picture>
+              <source srcset="assets/img/experiences/exp-lunch.webp" type="image/webp">
+              <img src="assets/img/experiences/exp-lunch.jpg" alt="Wholesome Ecuadorian executive lunch plate with fresh ingredients" width="900" height="600" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="exp-body">
+            <h3>Executive Lunch</h3>
+            <p>A complete midday menu featuring a comforting starter, traditional main dish, fresh tropical juice, and dessert or espresso. Prepared fresh daily.</p>
+            <a class="link-arrow" href="https://www.elnanorestaurant.com/miami-lunch-specials/" target="_blank" rel="noopener">See Lunch Specials</a>
+          </div>
         </article>
-        <article class="dish" data-name="Camarones reventados">
-          <div class="dish-text">
-            <h2>Camarones reventados</h2>
-            <p>Crisp prawns with patacones and lime.</p>
+
+        <!-- Card 2: Dinner -->
+        <article class="exp-card" data-reveal>
+          <div class="exp-media">
+            <span class="exp-tag">Evening Dining</span>
+            <picture>
+              <source srcset="assets/img/experiences/exp-dinner.webp" type="image/webp">
+              <img src="assets/img/experiences/exp-dinner.jpg" alt="Atmospheric evening dinner setting with plates and wine glasses" width="900" height="600" loading="lazy" decoding="async">
+            </picture>
           </div>
-          <figure class="dish-shot crop-prawns"><img src="assets/img/table.jpg" alt="Crisp fried prawns on a plate with patacones and avocado" width="738" height="414"></figure>
+          <div class="exp-body">
+            <h3>Dinner on Miracle Mile</h3>
+            <p>Savor our celebrated encebollado, sizzling mariscos, and coastal specialties under warm Coral Gables lighting with exceptional hospitality.</p>
+            <a class="link-arrow" href="https://www.sevenrooms.com/explore/elnanomiami/reservations/create/search/" target="_blank" rel="noopener">Reserve for Dinner</a>
+          </div>
         </article>
-        <article class="dish" data-name="Mariscos">
-          <div class="dish-text">
-            <h2>Mariscos</h2>
-            <p>Prawns and mussels with lime and cilantro.</p>
+
+        <!-- Card 3: Happy Hour -->
+        <article class="exp-card" data-reveal>
+          <div class="exp-media">
+            <span class="exp-tag">Mon–Fri • 3–7 PM</span>
+            <picture>
+              <source srcset="assets/img/experiences/exp-cocktails.webp" type="image/webp">
+              <img src="assets/img/experiences/exp-cocktails.jpg" alt="Handcrafted tropical cocktail with fresh citrus garnish on bar counter" width="900" height="600" loading="lazy" decoding="async">
+            </picture>
           </div>
-          <figure class="dish-shot crop-pan"><img src="assets/img/mariscos.jpg" alt="Prawns in a creamy orange sauce in an iron pan, with pickled onion" width="335" height="597"></figure>
+          <div class="exp-body">
+            <h3>Happy Hour &amp; Bar</h3>
+            <p>$9 classic cocktails and $7 bites every weekday afternoon. Try signature creations like La Ñaña, Amor Serrano, and Canelazo Miamero.</p>
+            <a class="link-arrow" href="https://el-nano-miami.micartaya.es" target="_blank" rel="noopener">Explore Drinks Menu</a>
+          </div>
         </article>
-        <article class="dish" data-name="Arroz con maduro y aguacate">
-          <div class="dish-text">
-            <h2>Arroz con maduro y aguacate</h2>
-            <p>Rice with sweet plantain and avocado, served with a spiced stew.</p>
+
+        <!-- Card 4: Celebrations & Events -->
+        <article class="exp-card" data-reveal>
+          <div class="exp-media">
+            <span class="exp-tag">Private Dining &amp; Groups</span>
+            <picture>
+              <source srcset="assets/img/experiences/exp-celebration.webp" type="image/webp">
+              <img src="assets/img/experiences/exp-celebration.jpg" alt="Friends laughing and toasting during a festive restaurant celebration" width="900" height="600" loading="lazy" decoding="async">
+            </picture>
           </div>
-          <figure class="dish-shot crop-rice"><img src="assets/img/arroz.jpg" alt="A bowl of spiced rice and stew topped with fried plantain, held in two hands" width="650" height="470"></figure>
+          <div class="exp-body">
+            <h3>Celebrations &amp; Events</h3>
+            <p>From birthday dinners and anniversaries to corporate lunches, host your group with customized Latin celebration menus and dedicated service.</p>
+            <a class="link-arrow" href="tel:+17865585466">Inquire About Events</a>
+          </div>
         </article>
       </div>
-      <ol class="story-nav" aria-label="Dishes">
-        <li><button type="button" data-go="0">Encebollado</button></li>
-        <li><button type="button" data-go="1">Camarones reventados</button></li>
-        <li><button type="button" data-go="2">Mariscos</button></li>
-        <li><button type="button" data-go="3">Arroz con maduro</button></li>
-      </ol>
-    </div>
-  </section>
+    </section>
 
-  <!-- ALSO -->
-  <section class="also">
-    <div class="also-words" aria-label="Also on the menu">
-      <span>Ceviche</span>
-      <span>Chaulafán</span>
-      <span>Fritada</span>
-      <span>Patacones</span>
-    </div>
-    <div class="also-side">
-      <figure class="also-shot"><img src="assets/img/crab.jpg" alt="Shredded crab with peas and chili oil on a golden sauce" width="420" height="476"></figure>
-      <p>The rest of the menu is online.</p>
-      <a class="ulink dark" href="https://el-nano-miami.micartaya.es" target="_blank" rel="noopener">Open the full menu</a>
-    </div>
-  </section>
+    <!-- ──────────────────────────────────────────────────────────────────────────
+         SECTION 3 — CHEF'S RECOMMENDATIONS
+         ────────────────────────────────────────────────────────────────────────── -->
+    <section class="recommendations" id="recommendations" aria-label="Chef's Recommendations">
+      <div class="section-head" data-reveal>
+        <span class="kicker dark">From Our Kitchen</span>
+        <h2>Chef's Recommendations</h2>
+        <p>A curated introduction to the vibrant heritage of coastal Ecuador. Each dish reflects generational recipes, native spices, and freshest coastal seafood.</p>
+      </div>
 
-  <!-- LUNCH -->
-  <section class="lunch" id="lunch">
-    <div class="lunch-photo" data-parallax><img src="assets/img/spread.jpg" alt="" width="660" height="464"></div>
-    <div class="lunch-copy">
-      <h2>Lunch specials</h2>
-      <p>Starter, main, drink, and dessert or coffee.</p>
-      <a class="ulink" href="https://www.elnanorestaurant.com/miami-lunch-specials/" target="_blank" rel="noopener">See the lunch specials</a>
+      <div class="dish-grid">
+        <!-- Dish 1: Encebollado -->
+        <article class="dish-card" data-reveal>
+          <div class="dish-media">
+            <span class="dish-tag badge-pick">Chef's Signature • House Icon</span>
+            <picture>
+              <source srcset="assets/img/food/dish-encebollado.webp" type="image/webp">
+              <img src="assets/img/food/dish-encebollado.jpg" alt="Encebollado: rich Ecuadorian albacore tuna and yuca broth with pickled red onions" width="900" height="600" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="dish-info">
+            <div class="dish-header">
+              <h3>Encebollado Ecuatoriano</h3>
+            </div>
+            <p>Our renowned albacore tuna and tender yuca broth infused with cilantro, cumin, and coastal aromatics, topped with tangy pickled red onion curtido and served with chifles.</p>
+            <a class="link-arrow" href="https://el-nano-miami.micartaya.es" target="_blank" rel="noopener">View on Official Menu</a>
+          </div>
+        </article>
+
+        <!-- Dish 2: Camarones Reventados -->
+        <article class="dish-card" data-reveal>
+          <div class="dish-media">
+            <span class="dish-tag badge-special">Guest Favorite</span>
+            <picture>
+              <source srcset="assets/img/table.webp" type="image/webp">
+              <img src="assets/img/table.jpg" alt="Camarones reventados: crisp golden fried prawns with patacones and avocado" width="738" height="414" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="dish-info">
+            <div class="dish-header">
+              <h3>Camarones Reventados</h3>
+            </div>
+            <p>Crispy, golden-fried jumbo prawns seasoned with garlic and coastal citrus, served alongside twice-fried green plantain patacones, ripe avocado, and house dipping sauce.</p>
+            <a class="link-arrow" href="https://el-nano-miami.micartaya.es" target="_blank" rel="noopener">View on Official Menu</a>
+          </div>
+        </article>
+
+        <!-- Dish 3: Seco de Pollo -->
+        <article class="dish-card" data-reveal>
+          <div class="dish-media">
+            <picture>
+              <source srcset="assets/img/food/dish-seco.webp" type="image/webp">
+              <img src="assets/img/food/dish-seco.jpg" alt="Seco de pollo: slow braised chicken stew with yellow rice and sweet plantain" width="900" height="600" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="dish-info">
+            <div class="dish-header">
+              <h3>Seco de Pollo</h3>
+            </div>
+            <p>Tender chicken slow-braised in a savory reduction of herbs, mild spices, and fruit notes, accompanied by fragrant yellow achiote rice and caramelized sweet plantains.</p>
+            <a class="link-arrow" href="https://el-nano-miami.micartaya.es" target="_blank" rel="noopener">View on Official Menu</a>
+          </div>
+        </article>
+
+        <!-- Dish 4: Ceviche Mixto -->
+        <article class="dish-card" data-reveal>
+          <div class="dish-media">
+            <picture>
+              <source srcset="assets/img/food/dish-ceviche.webp" type="image/webp">
+              <img src="assets/img/food/dish-ceviche.jpg" alt="Fresh Ecuadorian ceviche mixto with citrus, red onion and crunchy choclo corn" width="900" height="600" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="dish-info">
+            <div class="dish-header">
+              <h3>Ceviche Mixto</h3>
+            </div>
+            <p>Coastal shrimp and tender seafood gently cured in freshly squeezed lime and sour orange juice, tossed with red onions and cilantro, accompanied by toasted choclo corn.</p>
+            <a class="link-arrow" href="https://el-nano-miami.micartaya.es" target="_blank" rel="noopener">View on Official Menu</a>
+          </div>
+        </article>
+
+        <!-- Dish 5: Fritada Ecuatoriana -->
+        <article class="dish-card" data-reveal>
+          <div class="dish-media">
+            <picture>
+              <source srcset="assets/img/food/dish-fritada.webp" type="image/webp">
+              <img src="assets/img/food/dish-fritada.jpg" alt="Fritada ecuatoriana: seasoned braised and crisped pork with choclo corn and plantains" width="900" height="600" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="dish-info">
+            <div class="dish-header">
+              <h3>Fritada Ecuatoriana</h3>
+            </div>
+            <p>Succulent seasoned pork braised in spiced citrus broth and browned to crisp perfection in its natural juices, served with sweet maduro, boiled choclo corn, and tangy salsa criolla.</p>
+            <a class="link-arrow" href="https://el-nano-miami.micartaya.es" target="_blank" rel="noopener">View on Official Menu</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Menu Navigation Callout -->
+      <div class="menu-banner" data-reveal>
+        <div class="menu-banner-copy">
+          <h3>Hungry for more? Explore the full menu.</h3>
+          <p>Discover our complete selection of ceviches, guatita, yapingacho, pan de yuca, and artisanal cocktails.</p>
+        </div>
+        <a class="btn btn-primary" href="https://el-nano-miami.micartaya.es" target="_blank" rel="noopener">Open Full Restaurant Menu</a>
+      </div>
+    </section>
+
+    <!-- ──────────────────────────────────────────────────────────────────────────
+         SECTION 4 — STORY AND SIGNATURE DISHES
+         ────────────────────────────────────────────────────────────────────────── -->
+    <section class="intro" id="story" aria-label="Our Culinary Story">
+      <div class="intro-text" data-reveal>
+        <span class="kicker dark">Heritage &amp; Tradition</span>
+        <h2>Since 2001, the cooking of Ecuador’s coast.</h2>
+        <p class="intro-lead">Our encebollado has been celebrated as the best in Europe. Now, we bring that authentic passion to 339 Miracle Mile in Coral Gables.</p>
+        <p class="intro-sub">Founded on deep family traditions, El Ñaño has shared genuine South American hospitality across generations and continents.</p>
+        
+        <ul class="houses" aria-label="Our locations across four cities">
+          <li><span>Miami</span><em>Now Open on Miracle Mile</em></li>
+          <li><span>Barcelona</span><em>Original House</em></li>
+          <li><span>Zaragoza</span><em>Historic Quarter</em></li>
+          <li><span>Madrid</span><em>Temporarily Closed</em></li>
+        </ul>
+        <p class="houses-note">Seven houses across four international cities.</p>
+      </div>
+      <figure class="intro-shot" data-reveal>
+        <picture>
+          <source srcset="assets/img/ceviche.webp" type="image/webp">
+          <img src="assets/img/ceviche.jpg" alt="Traditional ceviche presented in a ceramic bowl with plantain chips, avocado and red onion" width="515" height="388" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+    </section>
+
+    <!-- Interactive Pinned Signature Dish Showcase -->
+    <section class="story" id="menu" aria-label="Interactive Signature Dishes">
+      <div class="pin">
+        <div class="dishes">
+          <article class="dish" data-name="Encebollado">
+            <div class="dish-text">
+              <span class="kicker">Signature Dish 01</span>
+              <h2>Encebollado</h2>
+              <p>A fragrant albacore tuna and yuca broth finished with pickled red onions and fresh cilantro. The iconic bowl that built our international reputation.</p>
+            </div>
+            <figure class="dish-shot">
+              <picture>
+                <source srcset="assets/img/spread.webp" type="image/webp">
+                <img src="assets/img/spread.jpg" alt="Bowl of freshly prepared encebollado topped with pickled red onions" width="660" height="464" loading="lazy" decoding="async">
+              </picture>
+            </figure>
+          </article>
+
+          <article class="dish" data-name="Camarones reventados">
+            <div class="dish-text">
+              <span class="kicker">Signature Dish 02</span>
+              <h2>Camarones reventados</h2>
+              <p>Crispy golden jumbo prawns served with freshly made patacones, lime wedges, and house dipping sauce. Fresh, crunchy, and irresistible.</p>
+            </div>
+            <figure class="dish-shot">
+              <picture>
+                <source srcset="assets/img/table.webp" type="image/webp">
+                <img src="assets/img/table.jpg" alt="Crisp fried prawns with patacones on a decorated sharing table" width="738" height="414" loading="lazy" decoding="async">
+              </picture>
+            </figure>
+          </article>
+
+          <article class="dish" data-name="Mariscos">
+            <div class="dish-text">
+              <span class="kicker">Signature Dish 03</span>
+              <h2>Mariscos &amp; Cazuela</h2>
+              <p>Sizzling prawns, mussels, and tender seafood simmered in a coastal garlic-herb reduction with lime and cilantro.</p>
+            </div>
+            <figure class="dish-shot">
+              <picture>
+                <source srcset="assets/img/mariscos.webp" type="image/webp">
+                <img src="assets/img/mariscos.jpg" alt="Seafood in a rich savory sauce served in a hot pan" width="335" height="597" loading="lazy" decoding="async">
+              </picture>
+            </figure>
+          </article>
+
+          <article class="dish" data-name="Arroz con maduro y aguacate">
+            <div class="dish-text">
+              <span class="kicker">Signature Dish 04</span>
+              <h2>Arroz con maduro y aguacate</h2>
+              <p>Spiced yellow rice accompanied by sweet fried ripe plantains and creamy avocado, served alongside a savory slow-cooked stew.</p>
+            </div>
+            <figure class="dish-shot">
+              <picture>
+                <source srcset="assets/img/arroz.webp" type="image/webp">
+                <img src="assets/img/arroz.jpg" alt="Bowl of spiced rice, rich stew, and golden fried plantains" width="650" height="470" loading="lazy" decoding="async">
+              </picture>
+            </figure>
+          </article>
+        </div>
+
+        <ol class="story-nav" aria-label="Signature Dishes Navigation">
+          <li><button type="button" data-go="0">Encebollado</button></li>
+          <li><button type="button" data-go="1">Camarones reventados</button></li>
+          <li><button type="button" data-go="2">Mariscos</button></li>
+          <li><button type="button" data-go="3">Arroz con maduro</button></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ──────────────────────────────────────────────────────────────────────────
+         SECTION 5 — THE RESTAURANT EXPERIENCE
+         ────────────────────────────────────────────────────────────────────────── -->
+    <section class="atmosphere" aria-label="Restaurant Atmosphere and Hospitality">
+      <div class="section-head" data-reveal>
+        <span class="kicker dark">Hospitality &amp; Setting</span>
+        <h2>The Warmth of Miracle Mile Meets Coastal Ecuador</h2>
+        <p>Step off the bustling boulevard into a welcoming dining room designed for conversation, laughter, and long meals with family and friends.</p>
+      </div>
+
+      <div class="atmosphere-grid">
+        <article class="atmo-card" data-reveal>
+          <picture>
+            <source srcset="assets/img/atmosphere/venue-dining.webp" type="image/webp">
+            <img src="assets/img/atmosphere/venue-dining.jpg" alt="Warm and stylish restaurant dining room with booth seating and soft evening lighting" width="1200" height="825" loading="lazy" decoding="async">
+          </picture>
+          <div class="atmo-caption">
+            <h3>Intimate Dining Spaces</h3>
+            <p>Comfortable booths and tables bathed in warm ambient lighting.</p>
+          </div>
+        </article>
+
+        <article class="atmo-card" data-reveal>
+          <picture>
+            <source srcset="assets/img/atmosphere/venue-bar.webp" type="image/webp">
+            <img src="assets/img/atmosphere/venue-bar.jpg" alt="Sophisticated cocktail bar counter with glassware and artisanal spirits" width="1200" height="1500" loading="lazy" decoding="async">
+          </picture>
+          <div class="atmo-caption">
+            <h3>Handcrafted Cocktail Bar</h3>
+            <p>Fresh maracuyá juices, Ecuadorian rum, and signature creations.</p>
+          </div>
+        </article>
+
+        <article class="atmo-card" data-reveal>
+          <picture>
+            <source srcset="assets/img/atmosphere/venue-terrace.webp" type="image/webp">
+            <img src="assets/img/atmosphere/venue-terrace.jpg" alt="Outdoor dining terrace with tropical greenery on Miracle Mile" width="1200" height="1500" loading="lazy" decoding="async">
+          </picture>
+          <div class="atmo-caption">
+            <h3>Miracle Mile Terrace</h3>
+            <p>Al fresco dining enjoying Coral Gables tropical breezes.</p>
+          </div>
+        </article>
+
+        <article class="atmo-card" data-reveal>
+          <picture>
+            <source srcset="assets/img/experiences/exp-dinner.webp" type="image/webp">
+            <img src="assets/img/experiences/exp-dinner.jpg" alt="Guests sharing flavorful dishes and engaging in dinner conversation" width="900" height="600" loading="lazy" decoding="async">
+          </picture>
+          <div class="atmo-caption">
+            <h3>Shared Hospitality</h3>
+            <p>Generous portions crafted for connection and celebrating together.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Experience Highlights -->
+      <div class="atmo-features">
+        <div class="feat-item" data-reveal>
+          <h3>Al Fresco Terrace</h3>
+          <p>Enjoy open-air dining along historic Miracle Mile in the heart of Coral Gables.</p>
+        </div>
+        <div class="feat-item" data-reveal>
+          <h3>Full Latin Bar</h3>
+          <p>Signature cocktails, craft spirits, Club Verde beer, and natural tropical juices.</p>
+        </div>
+        <div class="feat-item" data-reveal>
+          <h3>Generous Group Dining</h3>
+          <p>Spacious seating arrangements designed for family reunions and team celebrations.</p>
+        </div>
+        <div class="feat-item" data-reveal>
+          <h3>Authentic Ingredients</h3>
+          <p>Real yuca, green plantains, achiote, and fresh seafood imported and prepared daily.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ──────────────────────────────────────────────────────────────────────────
+         SECTION 6 — CELEBRATIONS AND EVENTS PREVIEW
+         ────────────────────────────────────────────────────────────────────────── -->
+    <section class="events-preview" aria-label="Celebrations and Private Events">
+      <div class="events-box" data-reveal>
+        <div class="events-content">
+          <span class="kicker">Host Your Occasion</span>
+          <h2>Gather Your People at El Ñaño</h2>
+          <p>From birthday dinners and milestone celebrations to corporate lunches and private venue dining, our hospitality team will make your gathering memorable with curated menus and vibrant South American warmth.</p>
+          <div class="events-actions">
+            <a class="btn btn-primary" href="https://www.sevenrooms.com/explore/elnanomiami/reservations/create/search/" target="_blank" rel="noopener">Reserve With SevenRooms</a>
+            <a class="btn btn-secondary" href="tel:+17865585466">Call (786) 558-5466</a>
+          </div>
+        </div>
+        <div class="events-media">
+          <picture>
+            <source srcset="assets/img/hero/hero-spread.webp" type="image/webp">
+            <img src="assets/img/hero/hero-spread.jpg" alt="Rich table spread for group celebration and shared feast" width="1600" height="1067" loading="lazy" decoding="async">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- ──────────────────────────────────────────────────────────────────────────
+         SECTION 7 — VISIT, HOURS AND PRACTICAL INFORMATION
+         ────────────────────────────────────────────────────────────────────────── -->
+    <section class="visit" id="visit" aria-label="Visit El Ñaño Miami">
+      <div class="visit-grid">
+        <div class="visit-main" data-reveal>
+          <span class="kicker dark">Plan Your Visit</span>
+          <h2>339 Miracle Mile<br>Coral Gables, FL 33134</h2>
+          <p class="visit-phone"><a href="tel:+17865585466">📞 (786) 558-5466</a></p>
+
+          <!-- Hours Card -->
+          <div class="hours-card">
+            <h3>Opening Hours</h3>
+            <ul class="hours-list">
+              <li>
+                <strong>Monday – Thursday</strong>
+                <span>11:30 AM – 10:00 PM</span>
+              </li>
+              <li>
+                <strong>Friday – Saturday</strong>
+                <span>11:30 AM – 11:00 PM</span>
+              </li>
+              <li>
+                <strong>Sunday</strong>
+                <span>11:30 AM – 9:30 PM</span>
+              </li>
+              <li>
+                <strong class="hh-highlight">Happy Hour (Mon – Fri)</strong>
+                <span class="hh-highlight">3:00 PM – 7:00 PM</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Action Links -->
+          <ul class="links" aria-label="Essential restaurant destinations">
+            <li>
+              <a class="primary" href="https://www.sevenrooms.com/explore/elnanomiami/reservations/create/search/" target="_blank" rel="noopener">
+                <span>Reserve a Table on SevenRooms</span>
+                <i aria-hidden="true">→</i>
+              </a>
+            </li>
+            <li>
+              <a href="https://el-nano-miami.micartaya.es" target="_blank" rel="noopener">
+                <span>Explore Full Restaurant Menu</span>
+                <i aria-hidden="true">→</i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.elnanorestaurant.com/miami-lunch-specials/" target="_blank" rel="noopener">
+                <span>Weekday Lunch Specials</span>
+                <i aria-hidden="true">→</i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.ubereats.com/store/el-nano-coral-gables/kp463oD1Vi6E7nZN94qZXA" target="_blank" rel="noopener">
+                <span>Order Delivery on Uber Eats</span>
+                <i aria-hidden="true">→</i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com/maps/search/?api=1&query=El+%C3%91a%C3%B1o+339+Miracle+Mile+Coral+Gables+FL+33134" target="_blank" rel="noopener">
+                <span>Get Driving &amp; Walking Directions</span>
+                <i aria-hidden="true">→</i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/elnanogroup/" target="_blank" rel="noopener">
+                <span>Follow Us on Instagram (@elnanogroup)</span>
+                <i aria-hidden="true">→</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="visit-side" data-reveal>
+          <figure class="visit-shot">
+            <picture>
+              <source srcset="assets/img/mariscos.webp" type="image/webp">
+              <img src="assets/img/mariscos.jpg" alt="Delicious coastal seafood dish served with fresh sides and natural juice" width="335" height="597" loading="lazy" decoding="async">
+            </picture>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ──────────────────────────────────────────────────────────────────────────
+       SITE FOOTER
+       ────────────────────────────────────────────────────────────────────────── -->
+  <footer class="foot">
+    <div class="foot-wrap">
+      <div class="foot-top">
+        <div class="foot-brand">
+          <img src="assets/logo/el-nano-miami-yellow.svg" alt="El Ñaño Miami" width="609" height="308">
+          <p>Coastal Ecuadorian cooking, craft cocktails, and authentic Latin hospitality since 2001. Now open on historic Miracle Mile.</p>
+        </div>
+        <div class="foot-nav-cols">
+          <div class="foot-col">
+            <h3>Discover</h3>
+            <ul>
+              <li><a href="#menu">Signature Dishes</a></li>
+              <li><a href="#experiences">Dining Experiences</a></li>
+              <li><a href="#recommendations">Chef's Recommendations</a></li>
+              <li><a href="#story">Our Heritage</a></li>
+            </ul>
+          </div>
+          <div class="foot-col">
+            <h3>Menus &amp; Orders</h3>
+            <ul>
+              <li><a href="https://el-nano-miami.micartaya.es" target="_blank" rel="noopener">Full Food &amp; Drink Menu</a></li>
+              <li><a href="https://www.elnanorestaurant.com/miami-lunch-specials/" target="_blank" rel="noopener">Executive Lunch Specials</a></li>
+              <li><a href="https://www.ubereats.com/store/el-nano-coral-gables/kp463oD1Vi6E7nZN94qZXA" target="_blank" rel="noopener">Uber Eats Delivery</a></li>
+              <li><a href="https://www.sevenrooms.com/explore/elnanomiami/reservations/create/search/" target="_blank" rel="noopener">Online Reservations</a></li>
+            </ul>
+          </div>
+          <div class="foot-col">
+            <h3>Visit Us</h3>
+            <ul>
+              <li><a href="https://www.google.com/maps/search/?api=1&query=El+%C3%91a%C3%B1o+339+Miracle+Mile+Coral+Gables+FL+33134" target="_blank" rel="noopener">339 Miracle Mile, Coral Gables</a></li>
+              <li><a href="tel:+17865585466">(786) 558-5466</a></li>
+              <li><a href="https://www.instagram.com/elnanogroup/" target="_blank" rel="noopener">Instagram @elnanogroup</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="foot-bottom">
+        <p>© 2026 El Ñaño Miami. All rights reserved.</p>
+        <p>339 Miracle Mile, Coral Gables, FL 33134 • Ecuadorian Restaurant</p>
+      </div>
     </div>
-  </section>
+  </footer>
 
-  <!-- VISIT -->
-  <section class="visit" id="visit">
-    <div class="visit-main">
-      <h2>339 Miracle Mile<br>Coral Gables, FL 33134</h2>
-      <p class="phone"><a href="tel:+17865585466">(786) 558-5466</a></p>
-      <ul class="links">
-        <li><a class="primary" href="https://www.sevenrooms.com/explore/elnanomiami/reservations/create/search/" target="_blank" rel="noopener"><span>Reserve a table</span><i aria-hidden="true">→</i></a></li>
-        <li><a href="https://el-nano-miami.micartaya.es" target="_blank" rel="noopener"><span>Menu</span><i aria-hidden="true">→</i></a></li>
-        <li><a href="https://www.elnanorestaurant.com/miami-lunch-specials/" target="_blank" rel="noopener"><span>Lunch specials</span><i aria-hidden="true">→</i></a></li>
-        <li><a href="https://www.ubereats.com/store/el-nano-coral-gables/kp463oD1Vi6E7nZN94qZXA" target="_blank" rel="noopener"><span>Delivery on Uber Eats</span><i aria-hidden="true">→</i></a></li>
-        <li><a href="https://www.instagram.com/elnanogroup/" target="_blank" rel="noopener"><span>Instagram</span><i aria-hidden="true">→</i></a></li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=El+%C3%91a%C3%B1o+339+Miracle+Mile+Coral+Gables+FL+33134" target="_blank" rel="noopener"><span>Directions</span><i aria-hidden="true">→</i></a></li>
-      </ul>
-    </div>
-    <figure class="visit-shot"><img src="assets/img/mariscos.jpg" alt="Patacones and fried dough on a board beside a glass of juice being poured" width="335" height="597"></figure>
-  </section>
-</main>
-
-<footer class="foot">
-  <img src="assets/logo/el-nano-miami-yellow.svg" alt="El Ñaño Miami" width="609" height="308">
-  <p>339 Miracle Mile, Coral Gables, FL 33134<br><a href="tel:+17865585466">(786) 558-5466</a></p>
-  <p><a href="https://www.instagram.com/elnanogroup/" target="_blank" rel="noopener">Instagram</a></p>
-</footer>
-
-<script src="assets/js/main.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
