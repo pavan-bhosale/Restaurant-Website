@@ -1,6 +1,6 @@
 /* ==========================================================================
    El Ñaño Miami — Official Brand Stylesheet
-   Brand Palette: Deep Green (#003C28), Warm Cream (#FAF3E6), Yellow (#FFE900),
+   Brand Palette: Deep Green (#003C28), Warm Cream (#FAF3E6), Yellow (#F9EE24),
    Teal (#32B4A6), Light Green (#ADCC70), Orange (#EC7F35)
    Typography: Paytone One (Headings), Lexend (Body & UI), Caveat/Holiday Free (Accents)
    ========================================================================== */
@@ -61,8 +61,9 @@
   --cream: #FAF3E6;         /* Warm cream primary structural bg */
   --cream-soft: #FFFBF2;    /* Soft ivory card bg */
   --cream-alt: #F3EBD8;     /* Border / divider tone */
-  --y: #FFE900;             /* Bright yellow PMS 108 C */
-  --y-hover: #E6D200;       /* Yellow hover */
+  --y: #F9EE24;             /* Brand yellow #F9EE24 */
+  --y-hover: #E0D620;       /* Yellow hover (derived from #F9EE24) */
+  --y-rgb: 249, 238, 36;    /* Brand yellow RGB components for alpha tints */
   --teal: #32B4A6;          /* Teal accent */
   --orange: #EC7F35;        /* Orange accent */
   
@@ -186,7 +187,7 @@ h1, h2, h3, h4 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  background-color: rgba(255, 233, 0, 0.18);
+  background-color: rgba(249, 238, 36, 0.18);
   color: var(--y);
   border-radius: 999px;
   margin-bottom: 12px;
@@ -435,7 +436,7 @@ h1, h2, h3, h4 {
   width: 44px;
   height: 44px;
   position: relative;
-  border: 2px solid rgba(255, 233, 0, 0.4);
+  border: 2px solid rgba(249, 238, 36, 0.4);
   border-radius: 8px;
   background: rgba(0, 60, 40, 0.4);
   color: var(--y);
@@ -560,7 +561,7 @@ h1, h2, h3, h4 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 45%;
+  object-position: center center;
   transform: scale(1.04);
   filter: brightness(0.92);
   animation: heroZoom 18s ease-out infinite alternate;
@@ -600,8 +601,8 @@ h1, h2, h3, h4 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background-color: rgba(255, 233, 0, 0.15);
-  border: 1px solid rgba(255, 233, 0, 0.35);
+  background-color: rgba(249, 238, 36, 0.15);
+  border: 1px solid rgba(249, 238, 36, 0.35);
   color: var(--y);
   padding: 6px 14px;
   border-radius: 999px;
@@ -679,7 +680,7 @@ h1, h2, h3, h4 {
   background-color: rgba(0, 39, 26, 0.88);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 2px solid rgba(255, 233, 0, 0.4);
+  border: 2px solid rgba(249, 238, 36, 0.4);
   border-radius: var(--radius-lg);
   padding: clamp(24px, 3vw, 36px);
   max-width: 440px;
@@ -736,7 +737,7 @@ h1, h2, h3, h4 {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 16px;
-  background-color: rgba(255, 233, 0, 0.1);
+  background-color: rgba(249, 238, 36, 0.1);
   border-left: 3px solid var(--y);
   padding: 10px 14px;
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
@@ -995,7 +996,7 @@ h1, h2, h3, h4 {
   bottom: -40px;
   width: 200px;
   height: 200px;
-  background: radial-gradient(circle, rgba(255, 233, 0, 0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(249, 238, 36, 0.12) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -1750,7 +1751,7 @@ h1, h2, h3, h4 {
     padding-bottom: 48px;
   }
   .hero-backdrop img {
-    object-position: 65% 50%;
+    object-position: 55% center;
   }
   .hero-copy h1 {
     font-size: clamp(2.1rem, 8vw, 3rem);
