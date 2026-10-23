@@ -901,6 +901,13 @@ h1, h2, h3, h4 {
   overflow: hidden;
   background-color: var(--g-deep);
 }
+.dish-media picture,
+.intro-shot picture,
+.dish-shot picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .dish-media img {
   width: 100%;
   height: 100%;
@@ -911,23 +918,23 @@ h1, h2, h3, h4 {
 /* Individual object positioning for dish photography */
 .dish-card--encebollado .dish-media img,
 .dish-card:nth-child(1) .dish-media img {
-  object-position: center 50%;
+  object-position: center 60% !important;
 }
 .dish-card--camarones .dish-media img,
 .dish-card:nth-child(2) .dish-media img {
-  object-position: center 50%;
+  object-position: center 70% !important;
 }
 .dish-card--seco .dish-media img,
 .dish-card:nth-child(3) .dish-media img {
-  object-position: center 50%;
+  object-position: 40% 45% !important;
 }
 .dish-card--ceviche .dish-media img,
 .dish-card:nth-child(4) .dish-media img {
-  object-position: center 65%;
+  object-position: center 70% !important;
 }
 .dish-card--fritada .dish-media img,
 .dish-card:nth-child(5) .dish-media img {
-  object-position: center 70%;
+  object-position: center 70% !important;
 }
 .dish-card:hover .dish-media img {
   transform: scale(1.06);
@@ -1089,7 +1096,7 @@ h1, h2, h3, h4 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 45%;
+  object-position: center 65% !important;
 }
 
 /* Pinned Dish Story (Preserved & Enhanced) */
@@ -1139,16 +1146,16 @@ h1, h2, h3, h4 {
   object-position: center;
 }
 .dish[data-name="Encebollado"] .dish-shot img {
-  object-position: center 50%;
+  object-position: center 60% !important;
 }
 .dish[data-name="Camarones reventados"] .dish-shot img {
-  object-position: center 50%;
+  object-position: center 70% !important;
 }
 .dish[data-name="Mariscos"] .dish-shot img {
-  object-position: center 50%;
+  object-position: center 65% !important;
 }
 .dish[data-name="Arroz con maduro y aguacate"] .dish-shot img {
-  object-position: center 50%;
+  object-position: center 65% !important;
 }
 
 .story-nav {
