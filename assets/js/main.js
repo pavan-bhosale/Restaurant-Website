@@ -160,5 +160,113 @@
     });
   }
 
+  /* ── On-Site Menu Category Tabs Filter ── */
+  var menuTabs = [].slice.call(document.querySelectorAll('.menu-tab-btn'));
+  var menuCards = [].slice.call(document.querySelectorAll('.menu-card'));
+  var lunchBox = document.getElementById('lunch-specials');
+  var hhBox = document.getElementById('happy-hour-promo');
+
+  if (menuTabs.length > 0) {
+    menuTabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        var cat = tab.getAttribute('data-cat');
+
+        // Update active tab button
+        menuTabs.forEach(function (t) {
+          var isActive = t === tab;
+          t.classList.toggle('active', isActive);
+          t.setAttribute('aria-selected', String(isActive));
+        });
+
+        // Filter cards
+        if (cat === 'lunch-specials') {
+          menuCards.forEach(function (c) { c.style.display = ''; });
+          if (lunchBox) {
+            lunchBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            lunchBox.classList.add('pulse-highlight');
+            setTimeout(function () { lunchBox.classList.remove('pulse-highlight'); }, 1500);
+          }
+        } else if (cat === 'happy-hour') {
+          menuCards.forEach(function (c) {
+            c.style.display = (c.getAttribute('data-cat') === 'drinks') ? '' : 'none';
+          });
+          if (hhBox) {
+            hhBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            hhBox.classList.add('pulse-highlight');
+            setTimeout(function () { hhBox.classList.remove('pulse-highlight'); }, 1500);
+          }
+        } else if (cat === 'all') {
+          menuCards.forEach(function (c) { c.style.display = ''; });
+        } else {
+          menuCards.forEach(function (c) {
+            var cardCat = c.getAttribute('data-cat');
+            c.style.display = (cardCat === cat) ? '' : 'none';
+          });
+        }
+      });
+    });
+  }
+
+  /* ── English / Español Language Switcher ── */
+  var langBtns = [].slice.call(document.querySelectorAll('.lang-btn'));
+
+  function setLanguage(lang) {
+    if (lang !== 'es' && lang !== 'en') lang = 'en';
+
+    // Update document lang
+    document.documentElement.lang = lang;
+
+    // Update all language toggle buttons
+    langBtns.forEach(function (btn) {
+      var btnLang = btn.getAttribute('data-lang');
+      var isActive = btnLang === lang;
+      btn.classList.toggle('active', isActive);
+      btn.setAttribute('aria-pressed', String(isActive));
+    });
+
+    // Update text content across page
+    if (window.I18N_DATA && window.I18N_DATA[lang]) {
+      var dict = window.I18N_DATA[lang];
+      var elements = [].slice.call(document.querySelectorAll('[data-i18n]'));
+      elements.forEach(function (el) {
+        var key = el.getAttribute('data-i18n');
+        if (dict[key] !== undefined) {
+          el.innerHTML = dict[key];
+        }
+      });
+    }
+
+    // Persist choice in localStorage
+    try {
+      localStorage.setItem('el_nano_lang', lang);
+    } catch (e) {
+      // Ignore if localStorage unavailable
+    }
+  }
+
+  // Bind click events on all language buttons (with delegation)
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('.lang-btn');
+    if (btn) {
+      e.preventDefault();
+      var targetLang = btn.getAttribute('data-lang');
+      if (targetLang) {
+        setLanguage(targetLang);
+      }
+    }
+  });
+
+  // Expose for testing
+  window.setWebsiteLanguage = setLanguage;
+
+  // Initialize language from localStorage or default to English
+  var savedLang = 'en';
+  try {
+    savedLang = localStorage.getItem('el_nano_lang') || 'en';
+  } catch (e) {
+    savedLang = 'en';
+  }
+  setLanguage(savedLang);
+
   setMode();
 })();
