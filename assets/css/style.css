@@ -1,8 +1,8 @@
 /* ==========================================================================
    El Ñaño Miami — Official Brand Stylesheet
    Brand Palette: Deep Green (#003C28), Warm Cream (#FAF3E6), Yellow (#F9EE24),
-   Teal (#32B4A6), Light Green (#ADCC70), Orange (#EC7F35)
-   Typography: Paytone One (Headings), Lexend (Body & UI), Caveat/Holiday Free (Accents)
+   Teal (#32B4A6), Light Green (#ADCC70)
+   Typography: Paytone One (Headings), Lexend (Body & UI), Holiday Free (Decorative Eyebrow Accents)
    ========================================================================== */
 
 /* ── Typography Declarations (Local Bundled WOFF2) ── */
@@ -65,7 +65,7 @@
   --y-hover: #E0D620;       /* Yellow hover (derived from #F9EE24) */
   --y-rgb: 249, 238, 36;    /* Brand yellow RGB components for alpha tints */
   --teal: #32B4A6;          /* Teal accent */
-  --orange: #EC7F35;        /* Orange accent */
+  /* Orange (#EC7F35) removed per client brand feedback */
   
   --font-display: "Paytone One", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-body: "Lexend", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -170,14 +170,14 @@ h1, h2, h3, h4 {
   align-items: center;
   gap: 8px;
   font-family: var(--font-accent);
-  font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+  font-size: clamp(1.15rem, 1.6vw, 1.45rem);
   font-weight: 700;
   letter-spacing: 0.02em;
   color: var(--y);
   margin-bottom: 8px;
 }
 .kicker.dark {
-  color: var(--orange);
+  color: var(--g);
 }
 .kicker-tag {
   display: inline-block;
@@ -305,15 +305,15 @@ h1, h2, h3, h4 {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  background-color: var(--orange);
-  color: #FFFFFF;
+  background-color: var(--y);
+  color: var(--g);
   font-size: 0.72rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   padding: 4px 10px;
   border-radius: 999px;
-  box-shadow: 0 2px 8px rgba(236, 127, 53, 0.35);
+  box-shadow: 0 2px 8px rgba(0, 60, 40, 0.15);
 }
 .badge-special {
   display: inline-flex;
@@ -701,7 +701,7 @@ h1, h2, h3, h4 {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--y), var(--teal), var(--orange));
+  background: linear-gradient(90deg, var(--y), var(--g-light), var(--teal));
 }
 
 .offer-header {
@@ -1469,8 +1469,8 @@ h1, h2, h3, h4 {
   transition: color 0.25s, border-color 0.25s;
 }
 .visit-phone a:hover {
-  color: var(--orange);
-  border-color: var(--orange);
+  color: var(--teal);
+  border-color: var(--teal);
 }
 
 .hours-card {
@@ -1515,8 +1515,8 @@ h1, h2, h3, h4 {
   font-weight: 500;
 }
 .hours-list .hh-highlight {
-  color: var(--orange);
-  font-weight: 700;
+  color: var(--g);
+  font-weight: 800;
 }
 
 .links {
