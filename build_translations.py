@@ -162,7 +162,7 @@ es = {
   "cocktail_canelazo_desc": "Nuestra versión fresca del clásico andino: aguardiente, infusión de canela, jugo de naranjilla natural y hielo picado.",
   "cocktail_sour_title": "Ecuadorian Sour",
   "cocktail_sour_desc": "Pisco y aguardiente macerados con fruta de la pasión, clara de huevo emulsionada, limón sutil y gotas de amargo.",
-  "cocktail_price": "$9 en Happy Hour / $14 Regular",
+  "cocktail_price": "<span class=\"price-hh\">$9 en Happy Hour</span><span class=\"price-reg\">$14 Regular</span>",
 
   # Happy Hour Banner
   "hh_banner_title": "Afternoon Happy Hour en Miracle Mile",
@@ -195,8 +195,8 @@ es = {
   # Pinned dishes
   "sig_01_label": "01 / Tradición Marina",
   "sig_01_desc": "Pescado fresco y camarones en marinada de cítricos con cebolla morada curtida, cilantro y maíz tostado.",
-  "sig_02_label": "02 / Cocina de la Costa",
-  "sig_02_desc": "Masa de plátano verde con pasta de maní y mariscos, cocinada lentamente en cazuela tradicional de barro.",
+  "sig_02_label": "Signature Dish 02",
+  "sig_02_desc": "Costillas de cerdo adobadas fritas, servidas con patacón y ensalada criolla.",
   "sig_03_label": "03 / Sabores a la Brasa",
   "sig_03_title": "Parrillada de Mariscos",
   "sig_03_desc": "Selección de mariscos a la parrilla con patacones dorados, chimichurri casero y salsas costeras.",
@@ -250,13 +250,18 @@ es = {
   "foot_col_menus": "Menús",
   "foot_link_onsite_menu": "Menú en el Sitio",
   "foot_link_lunch": "Almuerzos",
-  "card_view_digital": "Happy Hour ($9 Cocteles / $7 Piqueos)",
+  "card_view_digital": "Ver en Menú Digital ↗",
   "foot_link_full_menu": "Menú Completo Digital (MiCartaYa)",
   "foot_col_discover": "Conoce Más",
   "foot_sig_dishes": "Especialidades",
   "foot_col_visit": "Visítanos &amp; Reservas",
   "foot_link_reservations": "Reservas SevenRooms",
   "foot_link_ubereats": "Entregas Uber Eats",
+  "foot_link_doordash": "Entregas DoorDash",
+  "drawer_doordash": "Pedir a Domicilio (DoorDash)",
+  "link_doordash": "Pedir por DoorDash",
+  "sig_02_title": "Fritada",
+  "sig_02_nav": "Fritada",
   "foot_copy": "&copy; 2026 El Ñaño Miami. Todos los derechos reservados. 339 Miracle Mile, Coral Gables, FL 33134."
 }
 

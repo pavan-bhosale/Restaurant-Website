@@ -130,11 +130,10 @@ All stock photography listed below is sourced under the permissive [Unsplash Lic
   * **Role**: Grand festive banquet table set for private parties and milestone celebrations.
 
 ### Section 7 — Visit & Hours
-* **Welcoming Venue Shot**: `assets/img/visit/visit-venue.jpg` & `visit-venue.webp`
-  * **Native Dimensions**: 1600 × 1067 px (4:3 card)
-  * **Photographer**: Klara Kulikova ([@klarakulikova](https://unsplash.com/@klarakulikova))
-  * **Source URL**: `https://images.unsplash.com/photo-1525610553991-2bede1a236e2`
-  * **Role**: Welcoming dining setting on Miracle Mile (*replaces low-res 335px mariscos.jpg duplicate*).
+* **Client Restaurant Dining Room Shot**: `assets/img/pics from clients/lleno restaurante.jpg.jpeg` & `assets/img/visit/lleno-restaurante.webp`
+  * **Native Dimensions**: 1140 × 641 px (16:9 framed in 4:3 card)
+  * **Source**: Client-provided original photograph of the lively dining room and bar at 339 Miracle Mile
+  * **Role**: Authentic patron-filled restaurant interior showing true El Ñaño Miami atmosphere (replaces generic stock cafe image).
 
 ---
 

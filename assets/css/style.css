@@ -874,7 +874,7 @@ h1, h2, h3, h4 {
   transition: transform 0.7s var(--ease);
 }
 .exp-card:first-child .exp-media img {
-  object-position: center 50%;
+  object-position: center 68%;
 }
 .exp-card:hover .exp-media img {
   transform: scale(1.08);
@@ -1206,6 +1206,7 @@ h1, h2, h3, h4 {
 .dish[data-name="Encebollado"] .dish-shot img {
   object-position: center 60% !important;
 }
+.dish[data-name="Fritada"] .dish-shot img,
 .dish[data-name="Camarones reventados"] .dish-shot img {
   object-position: center 55% !important;
 }
@@ -1820,7 +1821,7 @@ h1, h2, h3, h4 {
 }
 .menu-card-head {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 12px;
   margin-bottom: 8px;
@@ -1830,11 +1831,37 @@ h1, h2, h3, h4 {
   color: var(--g);
   font-family: var(--font-display);
   line-height: 1.2;
+  flex: 1 1 auto;
+  min-width: 0;
+  word-break: break-word;
 }
 .menu-card-price {
   font-size: 1.05rem;
   font-weight: 800;
   color: var(--g);
+  white-space: nowrap;
+}
+.menu-card-price.cocktail-price,
+.menu-card[data-cat="drinks"] .menu-card-price {
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  flex-shrink: 0;
+  line-height: 1.25;
+}
+.menu-card-price .price-hh {
+  color: var(--g);
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+.menu-card-price .price-reg {
+  color: rgba(0, 60, 40, 0.65);
+  font-size: 0.8rem;
+  font-weight: 600;
   white-space: nowrap;
 }
 .menu-card-desc {
@@ -1848,15 +1875,24 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: auto;
   padding-top: 12px;
   border-top: 1px dashed var(--cream-alt);
   font-size: 0.85rem;
   color: rgba(0, 60, 40, 0.7);
 }
+.menu-card-meta > span {
+  flex: 1 1 auto;
+  min-width: 0;
+}
 .menu-card-link {
   font-weight: 700;
   color: var(--teal);
   transition: color 0.2s;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .menu-card-link:hover {
   color: var(--g);
