@@ -29,7 +29,8 @@ es = {
   "hero_hours_tag": "Lun–Jue 12–9:30pm · Vie–Sáb 12–10pm · Dom 12–9pm",
 
   # Hero Happy Hour Card
-  "hh_badge": "Lunes a Viernes · 3:00 PM – 7:00 PM",
+  "hh_badge": "Destacado en la Barra",
+  "hh_schedule_badge": "Lunes a Viernes · 3:00 PM – 7:00 PM",
   "hh_title": "Afternoon Happy Hour",
   "hh_desc": "La mejor hora para desconectar en Coral Gables con coctelería artesanal y piqueos costeros.",
   "hh_cocktails": "$9 Cocteles de Autor",
@@ -195,7 +196,7 @@ es = {
   # Pinned dishes
   "sig_01_label": "01 / Tradición Marina",
   "sig_01_desc": "Pescado fresco y camarones en marinada de cítricos con cebolla morada curtida, cilantro y maíz tostado.",
-  "sig_02_label": "Signature Dish 02",
+  "sig_02_label": "02 / Especialidad de la Casa",
   "sig_02_desc": "Costillas de cerdo adobadas fritas, servidas con patacón y ensalada criolla.",
   "sig_03_label": "03 / Sabores a la Brasa",
   "sig_03_title": "Parrillada de Mariscos",

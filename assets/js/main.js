@@ -259,12 +259,16 @@
   // Expose for testing
   window.setWebsiteLanguage = setLanguage;
 
-  // Initialize language from localStorage or default to English
-  var savedLang = 'en';
-  try {
-    savedLang = localStorage.getItem('el_nano_lang') || 'en';
-  } catch (e) {
-    savedLang = 'en';
+  // Initialize language from URL param (?lang=es / ?lang=en), localStorage, or default to English
+  var urlParams = new URLSearchParams(window.location.search);
+  var langParam = urlParams.get('lang');
+  var savedLang = (langParam === 'es' || langParam === 'en') ? langParam : null;
+  if (!savedLang) {
+    try {
+      savedLang = localStorage.getItem('el_nano_lang') || 'en';
+    } catch (e) {
+      savedLang = 'en';
+    }
   }
   setLanguage(savedLang);
 
